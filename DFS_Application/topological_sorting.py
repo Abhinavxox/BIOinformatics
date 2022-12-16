@@ -53,3 +53,13 @@ print ("Following is a Topological Sort of the given graph")
 
 # Function Call
 g.topologicalSort()
+
+#visualize the graph netwwokx
+import networkx as nx
+import matplotlib.pyplot as plt
+
+G = nx.DiGraph()
+G.add_nodes_from([0, 1, 2, 3, 4, 5])
+G.add_edges_from([(5, 2), (5, 0), (4, 0), (4, 1), (2, 3), (3, 1)])
+nx.draw(G, with_labels=True)
+plt.show()
